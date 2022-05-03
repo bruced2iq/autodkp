@@ -1,0 +1,13 @@
+apiVersion: workspaces.kommander.mesosphere.io/v1alpha1
+kind: Project
+metadata:
+  name: ciscocsa
+  namespace: ciscocsa
+spec:
+  workspaceRef:
+    name: ciscoworks
+  namespaceName: ciscoworks
+  placement:
+    clusterSelector:
+      matchLabels:
+        cluster: prod
